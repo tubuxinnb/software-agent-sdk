@@ -307,6 +307,7 @@ SEND_REASONING_CONTENT_MODELS: list[str] = [
     "deepseek/deepseek-v4-pro",  # Dual-mode (Thinking/Non-Thinking)
     "deepseek/deepseek-v4-flash",  # Dual-mode (Thinking/Non-Thinking)
     "deepseek/deepseek-v4.1-flash",  # Dual-mode (Thinking/Non-Thinking)
+    "qwen3.6",  # Chat template renders past turns' reasoning_content
 ]
 
 # Match token -> canonical LiteLLM ID for vision metadata overrides.

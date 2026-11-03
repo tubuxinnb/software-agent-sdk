@@ -723,7 +723,11 @@ def test_prompt_cache_retention_support(model, expected_retention):
         # DeepSeek V4 Flash (dual-mode thinking)
         ("deepseek/deepseek-v4-flash", True),
         ("litellm_proxy/deepseek/deepseek-v4-flash", True),
+        # Qwen3.6 (self-hosted, OpenAI-compatible endpoint)
+        ("openai/Qwen3.6-35B-A3B", True),
+        ("qwen3.6-27b", True),
         # Models that should NOT match
+        ("qwen3-coder-480b-a35b-instruct", False),
         ("deepseek/deepseek-chat", False),  # Different DeepSeek model
         ("kimi-k2-instruct", False),  # Different variant
         ("gpt-4o", False),
